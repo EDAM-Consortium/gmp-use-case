@@ -1,26 +1,11 @@
-<style>
-body { font-size: 11pt; line-height: 1.4; max-width: none; margin: 0; padding: 0; }
-h1 { font-size: 18pt; }
-h2 { font-size: 14pt; margin-top: 1.6em; }
-h3 { font-size: 11.5pt; margin-top: 1.4em; }
-table { display: table; font-size: 9.5pt; border-collapse: collapse; width: 100%; }
-th, td { padding: 2px 6px; }
-blockquote { font-size: 9pt; }
-code { font-size: 9pt; }
-img { display: block; margin: 0.5em auto; }
-img, table { page-break-inside: avoid; }
-h2, h3 { page-break-after: avoid; }
-.figure { page-break-inside: avoid; }
-</style>
-
 # Figures from use case results
 
-This document collects every figure shown in the use case results slides presnted on 8 June 2026 on growth monitoring and promotion (GMP) for children under 2 in Ethiopia. For each figure it gives the slide it appears on, the data behind it (as a CSV), and the R script that produces it.
+This document collects every figure shown in the use case results slides presented on 8 June 2026 on growth monitoring and promotion (GMP) for children under 2 in Ethiopia. For each figure it gives the slide it appears on, the data behind it (as a CSV), and the R script that produces it.
 
 
 ## Data and definitions
 
-See the [main README](../../../README.md) for the data, the four denominator scenarios, and the definitions used below ([Methods summary](../../../README.md#methods-summary), [Data sources](../../../README.md#data-sources)).
+See the [main README](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/README.md) for the data, the four denominator scenarios, and the definitions used below ([Methods summary](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/README.md#methods-summary), [Data sources](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/README.md#data-sources)).
 
 ## Contents
 
@@ -59,16 +44,14 @@ IDB total population (left axis) and the percentage aged ≤2 years (right axis,
 <img src="data_preparation/used/idb_under2/idb_under2_proportion_notitle.png" alt="idb_under2_proportion_notitle" width="100%">
 
 - **Slide title:** Data sources: US Census Bureau
-- **Data:** [`data_preparation/used/idb_under2/idb_under2_proportion_notitle.csv`](data_preparation/used/idb_under2/idb_under2_proportion_notitle.csv)
-- **Script:** [`src/R/data_preparation/idb_under2.R`](../../../src/R/data_preparation/idb_under2.R)
+- **Data:** [`data_preparation/used/idb_under2/idb_under2_proportion_notitle.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/data_preparation/used/idb_under2/idb_under2_proportion_notitle.csv)
+- **Script:** [`src/R/data_preparation/idb_under2.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/data_preparation/idb_under2.R)
 
 | Column | Description |
 |---|---|
 | `year` | Gregorian year |
 | `total_pop` | IDB total population of Ethiopia |
 | `proportion` | Percentage of the population aged ≤2 years |
-
-> **Note:** The slide's callout boxes ("124m", "8.2%", labelled 2025) match the IDB **2026** values (124,224,192; 8.21%). The 2025 values are 121,372,632 and 8.33%.
 
 </div>
 
@@ -81,8 +64,8 @@ World Bank urban vs rural share of the total population, 2005–2025.
 <img src="RQ1_urban_rural/used/wb_urban_rural/wb_urban_rural_pct_notitle.png" alt="wb_urban_rural_pct_notitle" width="80%">
 
 - **Slide title:** Data sources: World Bank
-- **Data:** [`RQ1_urban_rural/used/wb_urban_rural/wb_urban_rural_pct_notitle.csv`](RQ1_urban_rural/used/wb_urban_rural/wb_urban_rural_pct_notitle.csv)
-- **Script:** [`src/R/RQ1_urban_rural/wb_urban_rural.R`](../../../src/R/RQ1_urban_rural/wb_urban_rural.R)
+- **Data:** [`RQ1_urban_rural/used/wb_urban_rural/wb_urban_rural_pct_notitle.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ1_urban_rural/used/wb_urban_rural/wb_urban_rural_pct_notitle.csv)
+- **Script:** [`src/R/RQ1_urban_rural/wb_urban_rural.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ1_urban_rural/wb_urban_rural.R)
 
 | Column | Description |
 |---|---|
@@ -103,8 +86,8 @@ Estimated number of children <2 under each denominator scenario.
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/gmp_scenario_comparison/denominator_comparison.png" alt="denominator_comparison" width="80%">
 
 - **Slide title:** Estimates of the number of children <2 years
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_scenario_comparison/denominator_comparison.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/gmp_scenario_comparison/denominator_comparison.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_overall_comparison.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_overall_comparison.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_scenario_comparison/denominator_comparison.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/gmp_scenario_comparison/denominator_comparison.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_overall_comparison.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_overall_comparison.R)
 
 | Column | Description |
 |---|---|
@@ -123,8 +106,8 @@ National GMP coverage for children <2 under the four denominator scenarios.
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/gmp_scenario_comparison/scenario_comparison.png" alt="scenario_comparison" width="80%">
 
 - **Slide title:** The variable of interest: proportion of children <2 years weighed
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_scenario_comparison/scenario_comparison.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/gmp_scenario_comparison/scenario_comparison.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_overall_comparison.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_overall_comparison.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_scenario_comparison/scenario_comparison.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/gmp_scenario_comparison/scenario_comparison.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_overall_comparison.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_overall_comparison.R)
 
 | Column | Description |
 |---|---|
@@ -145,8 +128,8 @@ Average number of children <2 weighed per month during GMP sessions, by urban/ru
 <img src="RQ1_urban_rural/used/gmp_urban_rural/panel_abs_no_gmp.png" alt="panel_abs_no_gmp" width="80%">
 
 - **Slide title:** Question 1: What is GMP coverage split by urban and rural areas?
-- **Data:** [`RQ1_urban_rural/used/gmp_urban_rural/panel_abs_no_gmp.csv`](RQ1_urban_rural/used/gmp_urban_rural/panel_abs_no_gmp.csv)
-- **Script:** [`src/R/RQ1_urban_rural/gmp_urban_rural_timeseries.R`](../../../src/R/RQ1_urban_rural/gmp_urban_rural_timeseries.R)
+- **Data:** [`RQ1_urban_rural/used/gmp_urban_rural/panel_abs_no_gmp.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ1_urban_rural/used/gmp_urban_rural/panel_abs_no_gmp.csv)
+- **Script:** [`src/R/RQ1_urban_rural/gmp_urban_rural_timeseries.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ1_urban_rural/gmp_urban_rural_timeseries.R)
 
 | Column | Description |
 |---|---|
@@ -165,8 +148,8 @@ Urban/rural share of children weighed (solid) against the World Bank population 
 <img src="RQ1_urban_rural/used/gmp_urban_rural/panel_pct_share_with_pop.png" alt="panel_pct_share_with_pop" width="80%">
 
 - **Slide title:** Question 1: What is GMP coverage split by urban and rural areas?
-- **Data:** [`RQ1_urban_rural/used/gmp_urban_rural/panel_pct_share_with_pop.csv`](RQ1_urban_rural/used/gmp_urban_rural/panel_pct_share_with_pop.csv)
-- **Script:** [`src/R/RQ1_urban_rural/gmp_urban_rural_timeseries.R`](../../../src/R/RQ1_urban_rural/gmp_urban_rural_timeseries.R)
+- **Data:** [`RQ1_urban_rural/used/gmp_urban_rural/panel_pct_share_with_pop.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ1_urban_rural/used/gmp_urban_rural/panel_pct_share_with_pop.csv)
+- **Script:** [`src/R/RQ1_urban_rural/gmp_urban_rural_timeseries.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ1_urban_rural/gmp_urban_rural_timeseries.R)
 
 | Column | Description |
 |---|---|
@@ -186,8 +169,8 @@ National GMP coverage for children <2 by urban/rural. Denominator: scenario 2 ×
 <img src="RQ1_urban_rural/used/gmp_urban_rural/panel_wbp_total_no_gmp.png" alt="panel_wbp_total_no_gmp" width="80%">
 
 - **Slide title:** Question 1: What is GMP coverage split by urban and rural areas?
-- **Data:** [`RQ1_urban_rural/used/gmp_urban_rural/panel_wbp_total_no_gmp.csv`](RQ1_urban_rural/used/gmp_urban_rural/panel_wbp_total_no_gmp.csv)
-- **Script:** [`src/R/RQ1_urban_rural/gmp_urban_rural_timeseries.R`](../../../src/R/RQ1_urban_rural/gmp_urban_rural_timeseries.R)
+- **Data:** [`RQ1_urban_rural/used/gmp_urban_rural/panel_wbp_total_no_gmp.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ1_urban_rural/used/gmp_urban_rural/panel_wbp_total_no_gmp.csv)
+- **Script:** [`src/R/RQ1_urban_rural/gmp_urban_rural_timeseries.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ1_urban_rural/gmp_urban_rural_timeseries.R)
 
 | Column | Description |
 |---|---|
@@ -208,8 +191,8 @@ Distribution of the DHIS2 indicator *NUT_ % of Children < 2 years participated i
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/gmp_ind_coverage/04_boxplot_no_outliers.png" alt="04_boxplot_no_outliers" width="100%">
 
 - **Slide title:** Question 2: How many regions, zones, and woredas reach national standards for GMP coverage?
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_ind_coverage/04_boxplot_no_outliers.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/gmp_ind_coverage/04_boxplot_no_outliers.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_ind_coverage.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_ind_coverage.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_ind_coverage/04_boxplot_no_outliers.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/gmp_ind_coverage/04_boxplot_no_outliers.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_ind_coverage.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_ind_coverage.R)
 
 | Column | Description |
 |---|---|
@@ -229,8 +212,8 @@ Percentage of 2025 reporting periods in each coverage band, by admin level.
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/gmp_ind_coverage/05_stacked_bands_by_level_latest_year.png" alt="05_stacked_bands_by_level_latest_year" width="80%">
 
 - **Slide title:** Question 2: How many regions, zones, and woredas reach national standards for GMP coverage?
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_ind_coverage/05_stacked_bands_by_level_latest_year.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/gmp_ind_coverage/05_stacked_bands_by_level_latest_year.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_ind_coverage.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_ind_coverage.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_ind_coverage/05_stacked_bands_by_level_latest_year.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/gmp_ind_coverage/05_stacked_bands_by_level_latest_year.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_ind_coverage.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_ind_coverage.R)
 
 | Column | Description |
 |---|---|
@@ -252,8 +235,8 @@ Children <2 weighed per month by woreda (OCHA adm3), 2018–2025.
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_woreda_by_year.png" alt="gmp_map_woreda_by_year" width="100%">
 
 - **Slide title:** Question 3: What is the geographic variation in GMP coverage among children under 2?
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_woreda_by_year.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_woreda_by_year.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_woreda_by_year.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_woreda_by_year.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R)
 
 | Column | Description |
 |---|---|
@@ -273,8 +256,8 @@ Children <2 weighed per month by zone (OCHA adm2), from woreda data aggregated t
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_zonal_woreda_agg_by_year.png" alt="gmp_map_zonal_woreda_agg_by_year" width="100%">
 
 - **Slide title:** Question 3: What is the geographic variation in GMP coverage among children under 2?
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_zonal_woreda_agg_by_year.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_zonal_woreda_agg_by_year.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_zonal_woreda_agg_by_year.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_zonal_woreda_agg_by_year.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R)
 
 | Column | Description |
 |---|---|
@@ -294,8 +277,8 @@ Children <2 weighed per month by region (OCHA adm1), 2018–2025.
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_regional_by_year.png" alt="gmp_map_regional_by_year" width="100%">
 
 - **Slide title:** Question 3: What is the geographic variation in GMP coverage among children under 2?
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_regional_by_year.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_regional_by_year.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_regional_by_year.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_regional_by_year.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R)
 
 | Column | Description |
 |---|---|
@@ -315,8 +298,8 @@ Children <2 weighed per month by region, 2025.
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_regional_2025.png" alt="gmp_map_regional_2025" width="60%">
 
 - **Slide title:** Question 3: What is the geographic variation in GMP coverage among children under 2?
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_regional_2025.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_regional_2025.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_regional_2025.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_regional_2025.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R)
 
 | Column | Description |
 |---|---|
@@ -337,8 +320,8 @@ Children <2 weighed per month by zone (woreda data aggregated), 2025.
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_zonal_woreda_agg_2025.png" alt="gmp_map_zonal_woreda_agg_2025" width="60%">
 
 - **Slide title:** Question 3: What is the geographic variation in GMP coverage among children under 2?
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_zonal_woreda_agg_2025.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_zonal_woreda_agg_2025.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_zonal_woreda_agg_2025.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_zonal_woreda_agg_2025.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R)
 
 | Column | Description |
 |---|---|
@@ -359,8 +342,8 @@ Children <2 weighed per month by woreda, 2025.
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_woreda_2025.png" alt="gmp_map_woreda_2025" width="60%">
 
 - **Slide title:** Question 3: What is the geographic variation in GMP coverage among children under 2?
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_woreda_2025.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_woreda_2025.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_woreda_2025.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/map_gmp/gmp_map_woreda_2025.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/map_gmp.R)
 
 | Column | Description |
 |---|---|
@@ -381,8 +364,8 @@ Coefficient of variation of monthly children <2 weighed, by region, 2025.
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_sd/gmp_regional_cv_2025.png" alt="gmp_regional_cv_2025" width="60%">
 
 - **Slide title:** Question 3: What is the geographic variation in GMP coverage among children under 2?
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_sd/gmp_regional_cv_2025.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_sd/gmp_regional_cv_2025.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_sd.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_sd.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_sd/gmp_regional_cv_2025.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_sd/gmp_regional_cv_2025.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_sd.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_sd.R)
 
 | Column | Description |
 |---|---|
@@ -401,8 +384,8 @@ Regional GMP coverage in 2025, scenario 1 (DHIS2 indicator).
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario1_map_2025.png" alt="scenario1_map_2025" width="60%">
 
 - **Slide title:** Question 3: What is the geographic variation in GMP coverage among children under 2?
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario1_map_2025.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario1_map_2025.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_maps.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_maps.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario1_map_2025.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario1_map_2025.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_maps.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_maps.R)
 
 | Column | Description |
 |---|---|
@@ -421,8 +404,8 @@ Regional GMP coverage in 2025, scenario 2 (WBP total × IDB proportion).
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario2_map_2025.png" alt="scenario2_map_2025" width="60%">
 
 - **Slide title:** Question 3: What is the geographic variation in GMP coverage among children under 2?
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario2_map_2025.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario2_map_2025.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_maps.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_maps.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario2_map_2025.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario2_map_2025.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_maps.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_maps.R)
 
 | Column | Description |
 |---|---|
@@ -441,8 +424,8 @@ Regional GMP coverage over time, scenario 2.
 <img src="RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario2_map_by_year.png" alt="scenario2_map_by_year" width="100%">
 
 - **Slide title:** Question 3: What is the geographic variation in GMP coverage among children under 2?
-- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario2_map_by_year.csv`](RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario2_map_by_year.csv)
-- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_maps.R`](../../../src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_maps.R)
+- **Data:** [`RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario2_map_by_year.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ2_RQ3_national_level_and_geographic_variation/used/gmp_regional_maps/scenario2_map_by_year.csv)
+- **Script:** [`src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_maps.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ2_RQ3_national_level_and_geographic_variation/gmp_regional_maps.R)
 
 | Column | Description |
 |---|---|
@@ -464,8 +447,8 @@ Average number of babies (0–5 months) screened per month with acute malnutriti
 <img src="RQ4_underweight/used/acute_malnutrition_trends/trend_comparison_annual.png" alt="trend_comparison_annual" width="100%">
 
 - **Slide title:** Question 4: Among children who receive GMP services, what proportion are underweight?
-- **Data:** [`RQ4_underweight/used/acute_malnutrition_trends/trend_comparison_annual.csv`](RQ4_underweight/used/acute_malnutrition_trends/trend_comparison_annual.csv)
-- **Script:** [`src/R/RQ4_underweight/acute_malnutrition_trends.R`](../../../src/R/RQ4_underweight/acute_malnutrition_trends.R)
+- **Data:** [`RQ4_underweight/used/acute_malnutrition_trends/trend_comparison_annual.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ4_underweight/used/acute_malnutrition_trends/trend_comparison_annual.csv)
+- **Script:** [`src/R/RQ4_underweight/acute_malnutrition_trends.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ4_underweight/acute_malnutrition_trends.R)
 
 | Column | Description |
 |---|---|
@@ -486,8 +469,8 @@ Monthly number of babies (0–5 months) screened with acute malnutrition, nation
 <img src="RQ4_underweight/used/acute_malnutrition_trends/trend_comparison.png" alt="trend_comparison" width="100%">
 
 - **Slide title:** Question 4: Among children who receive GMP services, what proportion are underweight?
-- **Data:** [`RQ4_underweight/used/acute_malnutrition_trends/trend_comparison.csv`](RQ4_underweight/used/acute_malnutrition_trends/trend_comparison.csv)
-- **Script:** [`src/R/RQ4_underweight/acute_malnutrition_trends.R`](../../../src/R/RQ4_und*Use case update 8 June*erweight/acute_malnutrition_trends.R)
+- **Data:** [`RQ4_underweight/used/acute_malnutrition_trends/trend_comparison.csv`](https://github.com/EDAM-Consortium/gmp-use-case/raw/main/src/R/outputs/RQ4_underweight/used/acute_malnutrition_trends/trend_comparison.csv)
+- **Script:** [`src/R/RQ4_underweight/acute_malnutrition_trends.R`](https://github.com/EDAM-Consortium/gmp-use-case/blob/main/src/R/RQ4_underweight/acute_malnutrition_trends.R)
 
 | Column | Description |
 |---|---|
