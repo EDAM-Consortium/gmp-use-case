@@ -1,0 +1,33 @@
+greg_year,scenario,pct
+2018,1: DHIS2 indicator,NA
+2019,1: DHIS2 indicator,NA
+2020,1: DHIS2 indicator,NA
+2021,1: DHIS2 indicator,NA
+2022,1: DHIS2 indicator,NA
+2023,1: DHIS2 indicator,NA
+2024,1: DHIS2 indicator,57
+2025,1: DHIS2 indicator,63.8
+2018,2: WBP total,16.2
+2019,2: WBP total,21.1
+2020,2: WBP total,23.4
+2021,2: WBP total,25.3
+2022,2: WBP total,28.8
+2023,2: WBP total,32
+2024,2: WBP total,35.2
+2025,2: WBP total,42.5
+2018,3: WBP urban/rural,18.3
+2019,3: WBP urban/rural,23.9
+2020,3: WBP urban/rural,26.6
+2021,3: WBP urban/rural,28.8
+2022,3: WBP urban/rural,32.7
+2023,3: WBP urban/rural,36.4
+2024,3: WBP urban/rural,40
+2025,3: WBP urban/rural,48.3
+2018,4: IDB,15.4
+2019,4: IDB,19.8
+2020,4: IDB,22.1
+2021,4: IDB,23.8
+2022,4: IDB,27
+2023,4: IDB,30
+2024,4: IDB,33
+2025,4: IDB,39.8
