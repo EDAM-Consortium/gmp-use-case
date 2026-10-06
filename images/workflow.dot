@@ -1,0 +1,66 @@
+// Analysis workflow. Regenerate with: dot -Tpng -Gdpi=150 images/workflow.dot -o images/workflow.png
+digraph workflow {
+  rankdir=LR; newrank=true; compound=true; nodesep=0.25; ranksep=0.6;
+  fontname="Helvetica"; fontsize=13;
+  node [shape=box, style="rounded,filled", fillcolor="#FFFFFF", color="#0B2A4A",
+        fontname="Helvetica", fontsize=11, margin="0.15,0.06"];
+  edge [color="#0B2A4A", arrowsize=0.7];
+
+  subgraph cluster_data {
+    label=<<b>0 · Data</b>>; style="rounded,filled"; fillcolor="#EEF2F7"; color="#B8C4D3";
+    pull [label="DHIS2 pull (Python)\nor secure download", style="rounded,dashed,filled"];
+    gmp  [label="data/GMP\n(private)", shape=cylinder, style=filled, fillcolor="#FFE9A8"];
+    pub  [label="data/IDB · data/worldbank\ndata/shapefiles", shape=cylinder, style=filled, fillcolor="#FFE9A8"];
+    pull -> gmp;
+  }
+
+  subgraph cluster_prep {
+    label=<<b>1 · Data preparation</b>>; style="rounded,filled"; fillcolor="#EEF2F7"; color="#B8C4D3";
+    idb [label="idb_under2.R"];
+    cov [label="gmp_coverage.R"];
+    shp [label="generate_dhis2_gmp_shapes.R"];
+    idb -> cov;
+    shp -> cov;
+  }
+
+  subgraph cluster_rq1 {
+    label=<<b>RQ1 · Urban / rural</b>>; style="rounded,filled"; fillcolor="#F7F3E8"; color="#D9CBA3";
+    ts [label="gmp_urban_rural_timeseries.R"];
+    wb [label="wb_urban_rural.R"];
+  }
+
+  subgraph cluster_rq23 {
+    label=<<b>RQ2 + RQ3 · National standard and geographic variation</b>>; style="rounded,filled"; fillcolor="#F7F3E8"; color="#D9CBA3";
+    cmp  [label="gmp_overall_comparison.R"];
+    ind  [label="gmp_ind_coverage.R"];
+    rmap [label="gmp_regional_maps.R"];
+    map  [label="map_gmp.R"];
+    sd   [label="gmp_regional_sd.R"];
+    nut  [label="analyse_idb_gmp_nut.R"];
+  }
+
+  subgraph cluster_rq4 {
+    label=<<b>RQ4 · Underweight</b>>; style="rounded,filled"; fillcolor="#F7F3E8"; color="#D9CBA3";
+    amt [label="acute_malnutrition_trends.R"];
+  }
+
+  // Raw data: one dashed arrow per group (every script reads data/)
+  edge [style=dashed, color="#8A97A8"];
+  gmp -> idb  [ltail=cluster_data, lhead=cluster_prep];
+  gmp -> ts   [ltail=cluster_data, lhead=cluster_rq1];
+  gmp -> ind  [ltail=cluster_data, lhead=cluster_rq23];
+  gmp -> amt  [ltail=cluster_data, lhead=cluster_rq4];
+  edge [style=solid, color="#0B2A4A"];
+
+  // Column layout: data | preparation | research questions
+  {rank=same; idb; shp;}
+  {rank=same; ts; wb; ind; rmap; map; sd; nut; amt;}
+  // Stack the RQ clusters top to bottom
+  amt -> ind -> sd -> map -> nut -> rmap -> wb -> ts [style=invis];
+
+  // Script-to-script dependencies
+  idb -> rmap;
+  ts  -> cmp;
+  shp -> {map sd nut};
+  cov -> nut;
+}
