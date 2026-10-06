@@ -1,0 +1,20 @@
+# GMP and malnutrition — data element IDs
+# One ID per line. Lines starting with # are ignored.
+# Reference: malnutrition_metadata.csv
+# YZwvU4B2XSh  # WBP-Total population-Aggregated
+# cLbLkl4Wuo0  # WBP-Total population-Not aggregated
+
+# RyqiYTTblPQ  # NUT_Children <2 Years Weighted during GMP Session
+# ZlhsZsbiBG6  # NUT_Children < 5 years Screened for Acute Malnutrition
+
+# iGBYzyqmRxQ  # ESV-ICD11 5B50 - Underweight in infants, children or adolescents
+# PShftz0I6Ev  # R50-1772 Underweight (Insufficient intake of food and water due to self neglect)
+# FcxuLiB9zSz  # WBP-CF Under-2 years of age population Proportion
+
+IgRGLLw4Dm0	#_2017_Number of children <5 year screened and have moderate acute malnutrition
+EENP2aMcfRS	#_2017_Number of children <5 year screened and have severe acute malnutrition
+HLJp47aoBz1	#_2017_Number of children who exit from severe acute malnutrition treatment during the reporting period
+gS9Uz2MfAM6 # WBP-CF Prevalences children among < 5 years with SAM
+
+# Lmh5ayAZO4y  # WBP-T% Children <2 Years Weighted during GMP Session-non aggregate
+# FZ1m3LVZN2R  # WBP-T% Children <2 Years Weighted during GMP Session-aggregate

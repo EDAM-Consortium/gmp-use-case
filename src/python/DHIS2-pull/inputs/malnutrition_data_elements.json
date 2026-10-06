@@ -1,0 +1,7 @@
+{
+  "type": "malnutrition_de",
+  "ids_file": "inputs/malnutrition_de_ids.txt",
+  "period_type": "Monthly",
+  "category_option_combo": true,
+  "urban_rural": true
+}

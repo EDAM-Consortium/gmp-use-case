@@ -1,0 +1,10 @@
+# GMP and malnutrition — indicator IDs
+# One ID per line. Lines starting with # are ignored.
+# Reference: malnutrition_metadata.csv
+
+mCJzGF6Nh8F  # NUT_ % of Children < 2 years participated in GMP
+#Ei7aQ5k4dZX  # WBP-T# of Children < 2 years participated in GMP
+#ieQivUOLhYE  # WBP-B# of Children < 2 years participated in GMP
+#mdkvpZgpUiS  # WBP-B% of Children < 2 years participated in GMP
+nymrvgI7lUq  # WBP-El Estimated children under 2 years
+cpItyCYXKPd  # WBP-Total population
